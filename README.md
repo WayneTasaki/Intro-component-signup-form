@@ -27,7 +27,7 @@ Your users should be able to:
 - Any input field is empty
 - The email address is not formatted correctly
 <br>
-<br>
+Also, I went beyond what was required. If you test my validations, you'll find I added error messages if there were too few or incorrect characters in each input.
 
 
 
