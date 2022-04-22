@@ -23,7 +23,7 @@ Your users should be able to:
 
 1. View the optimal layout for the component depending on their device's screen size
 2. See hover states for all interactive elements on the page
-3. Receive an error message when the form is submitted if:
+3. Receive an error message when the form is submitted if:<br>
 &nbsp;&nbsp;&nbsp;&nbsp; - Any input field is empty
 &nbsp;&nbsp;&nbsp;&nbsp; - The email address is not formatted correctly
 <br>
