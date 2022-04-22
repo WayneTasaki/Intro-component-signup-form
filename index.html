@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/4a225315bb.js" crossorigin="anonymous"></script>
   <script src="main.js" defer></script>
 
   
@@ -13,41 +14,54 @@
 </head>
 
 <body>
-  <div class="page-wrapper">
+  <section class="page-wrapper">
 
-    <div class="intro-text">
+    <header class="intro-text">
       <h1>Learn to code by watching others</h1>
       <p>  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
-    </div>
+    </header>
 
-    <div class="signup-wrapper">
-      <div class="trial-details">
+    <section class="signup-wrapper">
+      <section class="trial-details">
         <p><span class="bold-trial-text">Try it free 7 days</span> then $20/mo. thereafter</p>
-      </div>
-      <div class="signup-form">
-        <form>
-          <input type="text" class="input" placeholder="First Name">
-          <input type="text" class="input" placeholder="Last Name">
-          <input type="email" class="input" placeholder="Email Address">
-          <input type="password" class="input" placeholder="Password">
-          <button type="submit">CLAIM YOUR FREE TRIAL</button>
+      </section>
+      <section class="signup-form">
+        <form id="form">
+          <section class="input-container">
+            <img src="images/icon-error.svg" id="firstNameErrorIcon" class="errorIcon" alt="">
+            <input id="firstName" class="input" placeholder="First Name" type="text">
+            <p id="firstNameErrorTxt" class="errors"></p>
+          </section>
+          
+          <section class="input-container">
+            <img src="images/icon-error.svg" id="lastNameErrorIcon" class="errorIcon" alt="">
+            <input id="lastName" class="input" placeholder="Last Name" type="text">
+            <p id="lastNameErrorTxt" class="errors"></p>
+          </section>
+
+          <section class="input-container">
+            <img src="images/icon-error.svg" id="emailErrorIcon" class="errorIcon" alt="">
+            <input id="email" class="input" placeholder="Email Address" type="email">
+            <p id="emailErrorTxt" class="errors"></p>
+          </section>
+
+          <section class="input-container">
+            <img src="images/icon-error.svg" id="passwordErrorIcon" class="errorIcon" alt="">
+            <input id="password" class="input" placeholder="Password" type="password">
+            <p id="passwordErrorTxt" class="errors"></p>
+          </section>
+
+          <!-- formnovalidate prevents the default validation error from displaying on page. Validity checks still occur. -->
+          <button id="submitButton" type="submit"
+          formnovalidate="formnovalidate">CLAIM YOUR FREE TRIAL</button>
         </form>
         <p class="tos-text">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p> 
-      </div>
-      </div>
-    </div>
-  
- 
-
-  
-
-
-  
-  <!-- <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer> -->
+      </section>
+      </section>
+      <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/WayneTasaki" target="_blank">Wayne Tasaki <i class="fa-brands flip fa-github fa-lg"></i></a>
+      </footer>
+    </section>
 </body>
 </html>
