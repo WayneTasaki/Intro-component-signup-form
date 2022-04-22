@@ -47,6 +47,7 @@ body {
     max-width: 34.688rem;
   }
 
+  /* Purple Trial Bar */
   .trial-details {
     background-color: #5E54A4;
     color: white;
@@ -58,15 +59,16 @@ body {
     padding-bottom: 1.125rem;
     line-height: 1.73;
     letter-spacing: 0.267857px;
-    font-weight: 200;
+    font-weight: 300;
     text-align: center;
     box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
   }
 
   .bold-trial-text {
-    font-weight: 500;
+    font-weight: 600;
   }
 
+  /* Signup Form */
   .signup-form { 
     max-width: 33.75rem;
     min-width: 100%;
